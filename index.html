@@ -1,1 +1,746 @@
-It Works
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <title>Wolfram - Customizable One Page Template</title>
+
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Third Party Styles -->
+    <link href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Preloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/queryloader2.js"></script>
+    <script src="js/init_preloader.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="preloader global-color_sun" data-spy="scroll" data-target=".navbar">
+
+    <!-- Background Pattern -->
+    <div class="bg-pattern bg-pattern_vertical"></div>
+    <!-- Backstretch Carousel -->
+    <div class="backstretch-carousel"></div>
+
+    <!-- _Preview Setup -->
+    <div class="setup__btn hidden-xs">
+      <i class="fa fa-flask"></i>
+    </div>
+    <div class="setup__block">
+      <div class="setup-block__close"><i class="fa fa-times"></i></div>
+      <div class="setup-block__title">Theme Color Options</div>
+      <ul class="setup-block__color-options color-options">
+        <li class="color-options_white" title="White" data-color="white"></li>
+        <li class="color-options_sun" title="Sun" data-color="sun"></li>
+        <li class="color-options_confetti" title="Confetti" data-color="confetti"></li>
+        <li class="color-options_picton-blue" title="Picton Blue" data-color="picton-blue"></li>
+        <li class="color-options_yellow" title="Yellow" data-color="yellow"></li>
+        <li class="color-options_bittersweet" title="Bittersweet" data-color="bittersweet"></li>
+      </ul>
+      <hr />
+      <div class="setup-block__title">Navbar Color Options</div>
+      <ul class="setup-block__color-options navbar-options">
+        <li class="navbar-options_default" title="Defaul" data-navbar="default" data-faded="0"></li>
+        <li class="navbar-options_default-faded" title="Default Faded" data-navbar="default" data-faded="1"></li>
+        <li class="navbar-options_inverse-faded" title="Inverse Faded" data-navbar="inverse" data-faded="1"></li>
+        <li class="navbar-options_inverse" title="Inverse" data-navbar="inverse" data-faded="0"></li>
+      </ul>
+      <hr />
+      <div class="setup-block__title">Menu Position</div>
+      <ul class="setup-block__icons menu-options">
+        <li class="menu-options_topbar" title="Topbar"><i class="fa fa-arrow-up fa-fw"></i></li>
+        <li class="menu-options_sidebar" title="Sidebar"><i class="fa fa-arrow-right fa-fw"></i></li>
+      </ul>
+      <hr />
+      <div class="setup-block__title">Background patterns</div>
+      <ul class="setup-block__icons background-options">
+        <li class="pattern-options_vertical-stripes" title="Vertical Stripes" data-pattern="vertical"><i class="fa fa-bars fa-rotate-90 fa-fw"></i></li>
+        <li class="pattern-options_horizontal-stripes" title="Horizontal Stripes" data-pattern="horizontal"><i class="fa fa-bars fa-fw"></i></li>
+        <li class="pattern-options_solid-color" title="Solid color" data-pattern="no"><i class="fa fa-square fa-fw"></i></li>
+      </ul>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-btn hidden"><i class="fa fa-bars fa-2x"></i></div>
+    <div class="sidebar-overlay hidden"></div>
+    <div class="sidebar sidebar-menu hidden">
+      <div class="sidebar-menu__title">Wolfram 1.0</div>
+      <ul class="sidebar-menu__ul">
+        <li><a href="index.html#welcome"><i class="fa fa-home fa-fw"></i> Welcome</a></li>
+        <li><a href="index.html#about"><i class="fa fa-info-circle fa-fw"></i> About</a></li>
+        <li><a href="index.html#portfolio"><i class="fa fa-image fa-fw"></i> Portfolio</a></li>
+        <li><a href="index.html#pricing"><i class="fa fa-money fa-fw"></i> Pricing</a></li>
+        <li><a href="index.html#team"><i class="fa fa-users fa-fw"></i> Team</a></li>
+        <li><a href="index.html#features"><i class="fa fa-asterisk fa-fw"></i> Features</a></li>
+        <li><a href="index.html#contact-us"><i class="fa fa-envelope fa-fw"></i> Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Top Menu -->
+    <div class="navbar navbar-fixed-top navbar-inverse navbar-faded navbar-transparent" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html#">Wolfram 1.0</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html#welcome">Welcome</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#contact-us">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <!-- Welcome screen -->
+    <div class="site-wrapper site-wrapper_welcome screen" id="welcome">
+      <div class="site-wrapper__inner">
+        <div class="cover-container">
+          <h1 class="site-wrapper-welcome__title">
+            Welcome to <span class="global-text-color">Wolfram</span>
+          </h1>
+          <p class="site-wrapper-welcome__summary">
+            Creative one page responsive template designed to meet your needs. Built with Twitter Bootstrap, it combines all of its great features with our clean user-friendly layout.
+          </p>
+          <div class="text-center">
+            <a class="btn btn-transparent site-wrapper-welcome__btn" href="index.html#about">
+              Find Out More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About screen -->
+    <div class="site-wrapper site-wrapper_about screen" id="about">
+      <div class="site-wrapper__inner">
+        <div class="cover-container">
+          <h2 class="title">
+            What's so <span class="global-text-color">awesome</span> about it?
+          </h2>
+          <p class="title__sub-text">
+            Advanced customizability and attention to details will help you get your own website up and running in no time.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="about__item">
+                <div class="about-item__header">
+                  <div class="about-item-header__icon">
+                    <i class="fa fa-arrows-alt"></i>
+                  </div>
+                  <h3 class="about-item-header__title">Fully <br />Responsive</h3>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="about-item__summary g-line-height-lg">
+                  Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="about__item">
+                <div class="about-item__header">
+                  <div class="about-item-header__icon">
+                    <i class="fa fa-cogs"></i>
+                  </div>
+                  <h3 class="about-item-header__title">
+                    Built <br />with LESS
+                  </h3>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="about-item__summary g-line-height-lg">
+                  Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="about__item">
+                <div class="about-item__header">
+                  <div class="about-item-header__icon">
+                    <i class="fa fa-thumbs-up"></i>
+                  </div>
+                  <h3 class="about-item-header__title">
+                    Based on <br />Bootstrap 3.2
+                  </h3>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="about-item__summary g-line-height-lg">
+                  Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio screen -->
+    <div class="site-wrapper site-wrapper_portfolio screen" id="portfolio">
+      <div class="site-wrapper__inner">
+        <div class="cover-container">
+          <h2 class="title">
+            A picture paints a <span class="global-text-color">thousand</span> words
+          </h2>
+          <p class="title__sub-text">
+            Some of the works we can be proud of. Feel free to contact us if you like what you see.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-alt">
+              <div class="portfolio__item">
+                <a href="img/portfolio-screenshot_1.jpg" data-lightbox="portfolio-item__img" data-title="Project Number 1">
+                  <div class="portfolio-item__img">
+                    <img class="img-responsive" src="img/portfolio-screenshot_1.jpg" alt="...">
+                    <div class="portfolio-item-img__mask">
+                      <div class="portfolio-mask__container">
+                        <div class="portfolio-mask__inner">
+                          <div class="portfolio-mask-inner__icon animated fadeIn">
+                            <i class="fa fa-image fa-2x"></i>
+                          </div>
+                          <h4 class="portfolio-mask-inner__title animated fadeInUp">Project Title</h4>
+                          <p class="portfolio-mask-inner__summary animated fadeInDown">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-alt">
+              <div class="portfolio__item">
+                <a href="img/portfolio-screenshot_2.jpg" data-lightbox="portfolio-item__img" data-title="Project Number 2">
+                  <div class="portfolio-item__img">
+                    <img class="img-responsive" src="img/portfolio-screenshot_2.jpg" alt="...">
+                    <div class="portfolio-item-img__mask">
+                      <div class="portfolio-mask__container">
+                        <div class="portfolio-mask__inner">
+                          <div class="portfolio-mask-inner__icon animated fadeIn">
+                            <i class="fa fa-image fa-2x"></i>
+                          </div>
+                          <h4 class="portfolio-mask-inner__title animated fadeInUp">Project Title</h4>
+                          <p class="portfolio-mask-inner__summary animated fadeInDown">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-alt">
+              <div class="portfolio__item">
+                <a href="img/portfolio-screenshot_3.jpg" data-lightbox="portfolio-item__img" data-title="Project Number 3">
+                  <div class="portfolio-item__img">
+                    <img class="img-responsive" src="img/portfolio-screenshot_3.jpg" alt="...">
+                    <div class="portfolio-item-img__mask">
+                      <div class="portfolio-mask__container">
+                        <div class="portfolio-mask__inner">
+                          <div class="portfolio-mask-inner__icon animated fadeIn">
+                            <i class="fa fa-image fa-2x"></i>
+                          </div>
+                          <h4 class="portfolio-mask-inner__title animated fadeInUp">Project Title</h4>
+                          <p class="portfolio-mask-inner__summary animated fadeInDown">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-alt">
+              <div class="portfolio__item">
+                <a href="img/portfolio-screenshot_4.jpg" data-lightbox="portfolio-item__img" data-title="Project Number 4">
+                  <div class="portfolio-item__img">
+                    <img class="img-responsive" src="img/portfolio-screenshot_4.jpg" alt="...">
+                    <div class="portfolio-item-img__mask">
+                      <div class="portfolio-mask__container">
+                        <div class="portfolio-mask__inner">
+                          <div class="portfolio-mask-inner__icon animated fadeIn">
+                            <i class="fa fa-image fa-2x"></i>
+                          </div>
+                          <h4 class="portfolio-mask-inner__title animated fadeInUp">Project Title</h4>
+                          <p class="portfolio-mask-inner__summary animated fadeInDown">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-alt">
+              <div class="portfolio__item">
+                <a href="img/portfolio-screenshot_5.jpg" data-lightbox="portfolio-item__img" data-title="Project Number 5">
+                  <div class="portfolio-item__img">
+                    <img class="img-responsive" src="img/portfolio-screenshot_5.jpg" alt="...">
+                    <div class="portfolio-item-img__mask">
+                      <div class="portfolio-mask__container">
+                        <div class="portfolio-mask__inner">
+                          <div class="portfolio-mask-inner__icon animated fadeIn">
+                            <i class="fa fa-image fa-2x"></i>
+                          </div>
+                          <h4 class="portfolio-mask-inner__title animated fadeInUp">Project Title</h4>
+                          <p class="portfolio-mask-inner__summary animated fadeInDown">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-alt">
+              <div class="portfolio__item">
+                <a href="img/portfolio-screenshot_6.jpg" data-lightbox="portfolio-item__img" data-title="Project Number 6">
+                  <div class="portfolio-item__img">
+                    <img class="img-responsive" src="img/portfolio-screenshot_6.jpg" alt="...">
+                    <div class="portfolio-item-img__mask">
+                      <div class="portfolio-mask__container">
+                        <div class="portfolio-mask__inner">
+                          <div class="portfolio-mask-inner__icon animated fadeIn">
+                            <i class="fa fa-image fa-2x"></i>
+                          </div>
+                          <h4 class="portfolio-mask-inner__title animated fadeInUp">Project Title</h4>
+                          <p class="portfolio-mask-inner__summary animated fadeInDown">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing screen -->
+    <div class="site-wrapper site-wrapper_pricing screen" id="pricing">
+      <div class="site-wrapper__inner">
+        <div class="cover-container">
+          <h2 class="title">
+            That's about <span class="global-text-color">6 cups</span> of coffee
+          </h2>
+          <p class="title__sub-text">
+            Three pricing plans to fit a project of any size. Painless refund guaranteed.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="pricing__item">
+                <div class="pricing-item__header">
+                  <div class="pricing-item-header__price">
+                    $10
+                  </div>
+                  <h3 class="pricing-item-header__title">
+                    Single<br />Application
+                  </h3>
+                </div>
+                <div class="pricing-item__body">
+                  <p class="g-line-height-lg">
+                    Pellentesque id commodo nisl, in semper orci. Donec aliquet quam vel porttitor laoreet.
+                  <ul class="pricing-item-body__list fa-ul">
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Integer mollis libero et purus auctor gravida
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Nam in enim eu dui elementum dignissim at sed
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Vestibulum vitae orci id purus viverra accumsan
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Nunc sit amet orci sed elit mollis vulputate quis
+                    </li>
+                  </ul>
+                  <div class="btn-white-outline">
+                    <a class="btn btn-white" href="index.html#">Purchase now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="pricing__item">
+                <div class="pricing-item__header">
+                  <div class="pricing-item-header__price">
+                    $50
+                  </div>
+                  <h3 class="pricing-item-header__title">
+                    Multiple<br />Applications
+                  </h3>
+                </div>
+                <div class="pricing-item__body">
+                  <p class="g-line-height-lg">
+                    Pellentesque id commodo nisl, in semper orci. Donec aliquet quam vel porttitor laoreet.
+                  <ul class="pricing-item-body__list fa-ul">
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Integer mollis libero et purus auctor gravida
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Nam in enim eu dui elementum dignissim at sed
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Vestibulum vitae orci id purus viverra accumsan
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Nunc sit amet orci sed elit mollis vulputate quis
+                    </li>
+                  </ul>
+                  <div class="btn-white-outline">
+                    <a class="btn btn-white" href="index.html#">Purchase now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="pricing__item">
+                <div class="pricing-item__header">
+                  <div class="pricing-item-header__price">
+                    $100
+                  </div>
+                  <h3 class="pricing-item-header__title">
+                    Extended<br />License
+                  </h3>
+                </div>
+                <div class="pricing-item__body">
+                  <p class="g-line-height-lg">
+                    Pellentesque id commodo nisl, in semper orci. Donec aliquet quam vel porttitor laoreet.
+                  <ul class="pricing-item-body__list fa-ul">
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Integer mollis libero et purus auctor gravida
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Nam in enim eu dui elementum dignissim at sed
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Vestibulum vitae orci id purus viverra accumsan
+                    </li>
+                    <li>
+                      <i class="fa-li fa fa-check"></i> 
+                      Nunc sit amet orci sed elit mollis vulputate quis
+                    </li>
+                  </ul>
+                  <div class="btn-white-outline">
+                    <a class="btn btn-white" href="index.html#">Purchase now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team screen -->
+    <div class="site-wrapper site-wrapper_team screen" id="team">
+      <div class="site-wrapper__inner">
+        <div class="cover-container">
+          <h2 class="title">
+            They've made this possible
+          </h2>
+          <p class="title__sub-text">
+            A team of hard-working enthusiastic people who helped this product come to life.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <!-- Carousel -->
+              <div id="team__carousel" class="carousel slide" data-ride="carousel" data-interval="9999999">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#team__carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#team__carousel" data-slide-to="1"></li>
+                  <li data-target="#team__carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <!-- Item 1 -->
+                  <div class="item active">
+                    <div class="cover-container">
+                      <div class="team-member__icon">
+                        <i class="fa fa-male fa-2x"></i>
+                      </div>
+                      <h2 class="team-member__title global-text-color">
+                        John Doe
+                      </h2>
+                      <h2 class="team-member__title">
+                        Project Manager
+                      </h2>
+                      <p class="team-member__summary g-line-height-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                      </p>
+                      <div class="text-center">
+                        <a href="index.html#" class="btn btn-transparent team-member__btn">Contact Me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="item">
+                    <div class="cover-container">
+                      <div class="team-member__icon">
+                        <i class="fa fa-apple fa-2x"></i>
+                      </div>
+                      <h2 class="team-member__title global-text-color">
+                        Judy Doe
+                      </h2>
+                      <h2 class="team-member__title">
+                        iOS Developer
+                      </h2>
+                      <p class="team-member__summary g-line-height-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                      </p>
+                      <div class="text-center">
+                        <a href="index.html#" class="btn btn-transparent team-member__btn">Contact Me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 3 -->
+                  <div class="item">
+                    <div class="cover-container">
+                      <div class="team-member__icon">
+                        <i class="fa fa-android fa-2x"></i>
+                      </div>
+                      <h2 class="team-member__title global-text-color">
+                        Richard Roe
+                      </h2>
+                      <h2 class="team-member__title">
+                        Android Developer
+                      </h2>
+                      <p class="team-member__summary g-line-height-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                      </p>
+                      <div class="text-center">
+                        <a href="index.html#" class="btn btn-transparent team-member__btn">Contact Me</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="index.html#team__carousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="index.html#team__carousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features screen -->
+    <div class="site-wrapper site-wrapper_feedback screen" id="features">
+      <div class="site-wrapper__inner">
+        <div class="cover-container">
+          <h2 class="title">
+            Key Product Features
+          </h2>
+          <p class="title__sub-text">
+            Even more reasons to purchase this template. More to come with a future update.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-md-offset-1">
+              <div class="features__item">
+                <h2 class="features-item__title">
+                  <span class="global-text-color">01.</span> 
+                  Six color options
+                </h2>
+                <div class="features-item__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+              <div class="features__item">
+                <h2 class="features-item__title">
+                  <span class="global-text-color">02.</span> 
+                  Four navbar types
+                </h2>
+                <div class="features-item__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-md-offset-1">
+              <div class="features__item">
+                <h2 class="features-item__title">
+                  <span class="global-text-color">03.</span> 
+                  Two menu types
+                </h2>
+                <div class="features-item__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+              <div class="features__item">
+                <h2 class="features-item__title">
+                  <span class="global-text-color">04.</span> 
+                  Three Background patterns
+                </h2>
+                <div class="features-item__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-md-offset-1">
+              <div class="features__item">
+                <h2 class="features-item__title">
+                  <span class="global-text-color">05.</span> 
+                  Built with LESS
+                </h2>
+                <div class="features-item__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+              <div class="features__item">
+                <h2 class="features-item__title">
+                  <span class="global-text-color">06.</span> 
+                  Free future updates
+                </h2>
+                <div class="features-item__summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact screen -->
+    <div class="site-wrapper site-wrapper_contact screen" id="contact-us">
+      <div class="site-wrapper__inner">
+        <div class="cover-container">
+          <h2 class="title">
+            Feel free to <span class="global-text-color">contact us</span>
+          </h2>
+          <p class="title__sub-text">
+            Do not hesitate to drop us a couple of lines. 24/7 support guaranteed.
+          </p>
+        </div>
+        <div class="container">
+          <div class="col-xs-6 col-sm-3">
+            <div class="contact__info g-line-height-lg">
+              <h4 class="contact-info__title">Address:</h4>
+              123/4 - ABC
+              <br />
+              Consectetur adipiscing elit
+              <br />
+              Curabitur vestibulum tellus
+              <br />
+              Vestibulum convallis
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="contact__info g-line-height-lg">
+              <h4 class="contact-info__title">Phone/Fax:</h4>
+              +123 456 789 (add. 123)
+              <h4 class="contact-info__title">Email:</h4>
+              lorem@ipsum.com
+              <br />
+              admin@ipsum.com
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <form role="form" class="contact__form">
+              <div class="row form-group">
+                <div class="col-xs-6 col-md-4">
+                  <label for="email" class="sr-only">Your email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="E-mail" data-original-title="" title="">
+                </div>
+                <div class="col-xs-6 col-md-4">
+                  <label for="name" class="sr-only">Your name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Full Name" data-original-title="" title="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="sr-only">Your message</label>
+                <textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-transparent">Send It</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/_preview.js"></script>
+  </body>
+</html>
