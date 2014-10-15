@@ -6172,15 +6172,9 @@ button.close {
     display: none !important;
   }
 }
-/*------------------------------------------------------------------
-Project:    Wolfram
-Author:     Yevgeny Simzikov
-URL:        http://simpleqode.com/
-            https://twitter.com/YevSim
-Version:    1.0
-Created:        18/08/2014
-Last change:    29/08/2014
--------------------------------------------------------------------*/
+
+
+
 /*
  * Helper Classes
  */
@@ -6223,15 +6217,7 @@ Last change:    29/08/2014
 .global-color_bittersweet .scrolltop:hover {
   background-color: #ff6b6b;
 }
-/*------------------------------------------------------------------
-Project:    Wolfram
-Author:     Yevgeny Simzikov
-URL:        http://simpleqode.com/
-            https://twitter.com/YevSim
-Version:    1.0
-Created:        18/08/2014
-Last change:    29/08/2014
--------------------------------------------------------------------*/
+
 /*
  * Typography
  */
@@ -6547,15 +6533,7 @@ body {
 .scrolltop:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-/*------------------------------------------------------------------
-Project:    Wolfram
-Author:     Yevgeny Simzikov
-URL:        http://simpleqode.com/
-            https://twitter.com/YevSim
-Version:    1.0
-Created:        18/08/2014
-Last change:    29/08/2014
--------------------------------------------------------------------*/
+
 /*
  * Preview Setup
  */

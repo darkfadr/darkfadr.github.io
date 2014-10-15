@@ -1,13 +1,3 @@
-/*------------------------------------------------------------------
-Project:    Wolfram
-Author:     Yevgeny Simzikov
-URL:        http://simpleqode.com/
-            https://twitter.com/YevSim
-Version:    1.0
-Created:        18/08/2014
-Last change:    29/08/2014
--------------------------------------------------------------------*/
-
 /*
  * Preview Setup
  */
