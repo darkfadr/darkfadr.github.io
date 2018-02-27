@@ -47,11 +47,11 @@ small {
 }
 
 .name {
-	font-size: 65px;
+	font-size: 3em;
 }
 
 .blurb {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .social {
@@ -68,11 +68,11 @@ small {
 }
 
 .social i:hover {
-	color: #FFCA28;
+	color: #03A9F4;
 }
 
 .logo{
-	width: 140px;
+	width: 120px;
 }
 
 
