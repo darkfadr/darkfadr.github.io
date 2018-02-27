@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Portfolio site for Ashley Narcisse">
+		<meta name="author" content="Darkfader">
+		<title>Darkfader | Ashley Narcisse</title>
+
+		<!-- Stylesheets -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/bootstrapValidator.min.css" rel="stylesheet">
+		<link href="assets/css/ladda-themeless.min.css" rel="stylesheet">
+		<link href="assets/css/jquery.bxslider.css" rel="stylesheet">
+		<link href="assets/css/animate.css" rel="stylesheet">
+		<link href="assets/css/app.css" rel="stylesheet">
+
+		<link href="../../settings-panel.css" rel="stylesheet">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- Respond.js IE8 support of media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+
+		<script src="assets/js/pace.min.js"></script>
+		<script src="assets/js/modernizr.min.js"></script>
+	</head>
+	<body data-spy="scroll" data-target="#nav" data-offset="80">
+		<!-- Menu -->
+		<nav class="navbar navbar-default" role="navigation" id="nav">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<i class="fa fa-reorder"></i>
+			  </button>
+			  <a class="navbar-brand" href="#home" style="margin-top: -10px">
+				<img src="assets/img/logo_small.png" alt="Logo">
+			  </a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right" id="navbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="#about">About</a></li>
+				<li><a href="blog.darkfader.us">Blog</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+
+		<!-- Main -->
+		<section class="main" id="home">
+			<div class="page">
+				<div class="wrapper">
+					<div class="container">
+						<div class="row">
+							<img style="margin: 0px auto" src="assets/img/logo.png" alt="" class="img-responsive text-center">
+						</div>
+						<p>
+							<span class="rotate">FIU Student, Software Engineer, Rider</span>
+						</p>
+					</div>
+					<div class="arrow-down">
+						<a class="scroll" href="#about" id="scroll"><i class="fa fa-angle-double-down"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section id="about" class="section section-solid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">About</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+
+				<div class="row mt20">
+					<div class="col-sm-4 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
+						<img src="assets/img/me.jpg" class="img-responsive about-img" />
+					</div>
+					<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
+						<p class="lead">
+							A <strong>Huge</strong> Star Wars geek with a love for
+							<span class="label label-warning">JavaScript</span> and full-stack web applications.
+						</p>
+						<p>
+							 My name is <strong>Ashley NARCISSE</strong>, I'm currently attending Florida International University
+							 in the always sunny Miami, FL.
+							 Aenean purus libero, egestas sed nisl sed, posuere fermentum tortor.
+							 Mauris vitae orci nisl. Phasellus dapibus dapibus tincidunt. Integer
+							 nec risus blandit, scelerisque diam eget, luctus urna. In pulvinar
+							 vel arcu in pretium. Vestibulum vitae purus mi. Mauris in luctus quam,
+							 ac placerat tortor. Quisque malesuada blandit rhoncus. Sed sit amet
+							 suscipit velit. Nullam massa augue, bibendum eu dolor pretium, rutrum.
+						</p>
+						<p>
+							Sed dignissim fermentum elit. Integer placerat massa tincidunt, sodales
+							risus id, volutpat ante. Suspendisse mattis vestibulum nibh, vel mattis
+							enim commodo vehicula. Phasellus non lectus aliquam diam dignissim imperdiet
+							at dapibus lectus.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section class="section" id="tweets">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">
+						<i class="fa fa-twitter twitter-feed-icon"></i>
+						<span id="twitterFeed"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resume -->
+		<section id="resume" class="section section-solid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Resume</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="text-center">A quick glance at my professional work history and development</p>
+						<ul class="v-timeline mt50">
+							<li>
+								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-paper-plane-o"></i> Work experience</h3>
+							</li>
+							<li>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>Dec 2014 - present</span></time>
+								<div class="v-icon" data-toggle="collapse" data-target="#toggle-1"><i class="fa fa-minus"></i></div>
+								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" >
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-1">Software Engineering Intern @ Ultimate Software</a></h4>
+									<p id="toggle-1" class="collapse in">Weston, Florida</p>
+								</div>
+							</li>
+							<li>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s" datetime="2013-04-16 21:30"><span>Jan 2013 - June 2015</span></time>
+								<div class="v-icon" data-toggle="collapse" data-target="#toggle-2"><i class="fa fa-plus"></i></div>
+								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-2">Support Specialist @ Florida International University</a></h4>
+									<p id="toggle-2" class="collapse">Miami, Florida</p>
+								</div>
+							</li>
+							<li>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s" datetime="2013-04-17"><span>Feb 2014 - Aug 2014</span></time>
+								<div class="v-icon" data-toggle="collapse" data-target="#toggle-3"><i class="fa fa-plus"></i></div>
+								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-3">Software Developer @ Neurs, Inc.</a></h4>
+									<p id="toggle-3" class="collapse">Miami, Florida</p>
+								</div>
+							</li>
+							<li>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s" datetime="2013-04-17"><span>Aug 2013 - August 2015</span></time>
+								<div class="v-icon" data-toggle="collapse" data-target="#toggle-4"><i class="fa fa-plus"></i></div>
+								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-4">Webmaster @ FIU STARS Computing Corps</a></h4>
+									<p id="toggle-4" class="collapse">Miami, Florida</p>
+								</div>
+							</li>
+						</ul>
+						<ul class="v-timeline mt50">
+							<li>
+								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-graduation-cap"></i> Education</h3>
+							</li>
+							<li>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.4s" datetime="2013-04-18"><span>2011 - 2016</span></time>
+								<div class="v-icon" data-toggle="collapse" data-target="#toggle-5"><i class="fa fa-minus"></i></div>
+								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.4s">
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-5">B.S. Computer Science</a> <em>In Progress</em></h4>
+									<p id="toggle-5" class="collapse in">Florida International University, Miami, FL</p>
+								</div>
+							</li>
+							<li>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.4s" datetime="2013-04-18"><span>2013 - Present</span></time>
+								<div class="v-icon" data-toggle="collapse" data-target="#toggle-6"><i class="fa fa-minus"></i></div>
+								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.4s">
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-6">Independent Studies</a> <em>PluralSight</em></h4>
+									<ul id="toggle-6" class="collapse in">
+										<!--<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>-->
+									</ul>
+									<!-- <p id="toggle-5" class="collapse in">Florida International University, Miami, FL</p> -->
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="section" id="skills">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Skills</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row personal-skills">
+					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
+						<h4>NinJutsu</h4>
+						<h6>HTML5/CSS3</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 92%;">
+								92%
+							</div>
+						</div>
+						<h6>JavaScript</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
+								82%
+							</div>
+						</div>
+						<h6>PHP</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+								70%
+							</div>
+						</div>
+						<h6>Java</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
+								78%
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
+						<h4>Knowledge</h4>
+						<ul class="fa-ul skills-ul">
+						  <li><i class="fa-li fa fa-check"></i>Responsive Design</li>
+						  <li><i class="fa-li fa fa-check"></i>Software Design Patterns</li>
+						  <li><i class="fa-li fa fa-check"></i>Continuous Integration & Deployment</li>
+						  <li><i class="fa-li fa fa-check"></i>Agile Development</li>
+						  <li><i class="fa-li fa fa-check"></i>Test Driven Development</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row personal-skills">
+					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s">
+						<h4> <i class="fa fa-globe"></i>Languages</h4>
+						<div class="lang-container">
+							<input type="text" value="100" class="dial"
+								data-width="100"
+								data-height="100"
+								data-fgColor="#869198"
+								data-skin="tron"
+								data-thickness=".2"
+								data-displayPrevious=true
+								data-readOnly=true>
+							<p class="lang-description">English</p>
+							<span class="lang-level">native</span>
+						</div>
+
+						<div class="lang-container">
+							<input type="text" value="80" class="dial"
+								data-width="100"
+								data-height="100"
+								data-fgColor="#869198"
+								data-skin="tron"
+								data-thickness=".2"
+								data-displayPrevious=true
+								data-readOnly=true>
+							<p class="lang-description">French</p>
+							<span class="lang-level">advanced</span>
+						</div>
+
+						<div class="lang-container">
+							<input type="text" value="25" class="dial"
+								data-width="100"
+								data-height="100"
+								data-fgColor="#869198"
+								data-skin="tron"
+								data-thickness=".2"
+								data-displayPrevious=true
+								data-readOnly=true
+								data-bgColor="#fff">
+							<p class="lang-description">Japanese</p>
+							<span class="lang-level">basic</span>
+						</div>
+
+						<div class="lang-container">
+							<input type="text" value="25" class="dial"
+								data-width="100"
+								data-height="100"
+								data-fgColor="#869198"
+								data-skin="tron"
+								data-thickness=".2"
+								data-displayPrevious=true
+								data-readOnly=true
+								data-bgColor="#fff">
+							<p class="lang-description">Spanish</p>
+							<span class="lang-level">basic</span>
+						</div>
+					</div>
+					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">
+						<h4>Hobbies</h4>
+						<ul class="fa-ul skills-ul">
+						  <li><i class="fa-li fa fa-code"></i>Coding</li>
+						  <li><i class="fa-li fa fa-graduation-cap"></i>Learning</li>
+						  <li><i class="fa-li fa fa-motorcycle"></i>Riding Motorcycles</li>
+						  <li><i class="fa-li fa fa-music"></i>DJing</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Contact</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
+						<p>
+							<strong>Contact Me</strong>
+						</p>
+						<ul class="list-contacts">
+							<!-- <li><i class="fa fa-mobile-phone"></i> (786) 398-2866</li> -->
+							<li><i class="fa fa-map-marker"></i> Miami, FL<br> Sunshine State</li>
+							<li><i class="fa fa-envelope-o"></i> <a href="mailto:ash@9stack.com">ash@9stack.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">Built with <i class="fa fa-heart text-danger"></i> By DarkFader</div>
+					<div class="col-sm-6 text-right">
+						<div class="social">
+							<a href="http://twitter.com/_darkfader" target="_blank" class="btn btn-theme"><i class="fa fa-twitter"></i></a>
+							<a href="http://instagram.com/housejunkie" target="_blank" class="btn btn-theme"><i class="fa fa-instagram"></i></a>
+							<a href="http://linkedin.com/in/anarcisse" target="_blank" class="btn btn-theme"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.backstretch.min.js"></script>
+		<script src="assets/js/bootstrapValidator.min.js"></script>
+		<script src="assets/js/validator/emailAddress.js"></script>
+		<script src="assets/js/spin.min.js"></script>
+		<script src="assets/js/ladda.min.js"></script>
+		<script src="assets/js/retina.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/js/jquery.shuffle.min.js"></script>
+		<script src="assets/js/jquery.bxslider.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/jQuery.GI.TheWall.min.js"></script>
+		<script src="assets/js/twitterFetcher.min.js"></script>
+		<script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+		<script src="assets/js/jquery.throttledresize.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/jquery.knob.min.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>

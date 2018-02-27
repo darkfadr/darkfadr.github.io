@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('../../assets/img/bg.jpeg') center no-repeat;
+	background-size: cover;
+}
+
+a{
+	color: white;
+}
+
+hr {
+	border-bottom: .4px solid rgba(0, 0, 0, .5);
+}
+
+small {
+	font-size: .3em;
+}
+
+#background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.container{
+	z-index: 1;
+}
+.info {
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 60vw;
+	max-height: 80vh;
+	color: white;
+}
+
+.name {
+	font-size: 65px;
+}
+
+.blurb {
+	font-size: 20px;
+}
+
+.social {
+	width: 150px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.social i {
+	text-shadow: 0 0 12px hsla(0, 0, 0, 0.2);
+	transition: .5 ease;
+}
+
+.social i:hover {
+	color: #FFCA28;
+}
+
+.logo{
+	width: 140px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .info {
+    align-items: center;
+		justify-content: center;
+		max-width: 90vw;
+		max-height: 120vh;
+  }
+
+  .socail {
+  	width: 200px;
+  }
+}
