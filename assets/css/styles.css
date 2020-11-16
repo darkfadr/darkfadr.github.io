@@ -5,20 +5,22 @@
 }
 
 a {
-	color: #9C9C9C;
+	color: #e0fbfc;
 	text-decoration: none;
 	transition: all ease-in-out .3s;
 }
 
-a:hover { color: white; }
+	a:hover { color: #7156d9; }
 
 body {
 	display: flex;
 	flex-direction: column;
-	background-size: cover;
-	background-image: url('../img/bg.jpg');
-	background-position-x: 250px;
-	color: #9C9C9C;
+	background-color: black;
+	background-image: url('../img/bg.webp');
+	background-position-x: 240px;
+	background-repeat: no-repeat;
+	background-size: 1680px 1050px;
+	color: #e0fbfc;
 }
 
 nav a {
@@ -49,13 +51,19 @@ nav a {
 
 footer {
 	display: flex;
-	margin-left: 100px;
-	width: 500px;
+	padding-left: 100px;
+	width: 100vw;
 	font-size: 1.3em;
 }
 
 footer a {
 	margin-right: 10px;
+	font-weight: bold;
+}
+
+.br {
+	flex-basis: 100%;
+	height: 0;
 }
 
 .intro h1 {
@@ -76,16 +84,35 @@ footer a {
 	color: white;
 }
 
+@media only screen and (min-width: 1650px) {
+  body {
+		background-position-x: 450px;
+	}
+}
+@media only screen and (min-width: 1850px) {
+  body {
+		background-position-x: 650px;
+	}
+}
 
 @media only screen and (max-width: 768px) {
-  .info {
-    align-items: center;
+	body {
 		justify-content: center;
-		max-width: 90vw;
-		max-height: 120vh;
-  }
+		align-items: center;
+	}
+  .container {
+		padding-left: 0;
+		max-width: 600px;
+	}
+	footer {
+		padding-left: 0;
+		justify-content: center;
+	}
+}
 
-  .socail {
-  	width: 200px;
-  }
+@media only screen and (max-width: 414px) {
+  .container {
+		padding-left: 0;
+		max-width: 320px;
+	}
 }
