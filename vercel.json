@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/redirect.ts": {
+      "includeFiles": "redirects.json"
+    }
+  },
+  "rewrites": [
+    { "source": "/r/:shortcut", "destination": "/api/redirect" }
+  ]
+}

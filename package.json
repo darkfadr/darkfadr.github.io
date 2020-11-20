@@ -1,0 +1,22 @@
+{
+  "name": "darkfadr.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkfadr/darkfadr.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkfadr/darkfadr.github.io/issues"
+  },
+  "homepage": "https://github.com/darkfadr/darkfadr.github.io#readme",
+  "dependencies": {
+    "@yotie/micron": "^2.0.0"
+  }
+}
